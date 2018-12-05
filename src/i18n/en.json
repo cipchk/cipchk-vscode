@@ -1,0 +1,14 @@
+{
+	"attributes": {
+		"title": "属性",
+		"list": {
+			"as-attr.stringTemplateOutlet": "attributes attr stringTemplateOutlet()"
+		}
+	},
+	"ci": {
+		"title": "",
+		"list": {
+			"as-test.new": "ci test new()"
+		}
+	}
+}
