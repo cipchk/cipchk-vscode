@@ -7,9 +7,37 @@
         "scope": ""
     }
 
+    , "ci test describe": {
+        "prefix": "as-test.describe",
+        "body": "describe('${1:#properies}', () => {\n  $0\n});",
+        "description": "ci test describe()",
+        "scope": ""
+    }
+
+    , "ci test it done": {
+        "prefix": "as-test.it-done",
+        "body": "it('${1:should be working}', (done: () => void) => {\n  $0\n});",
+        "description": "ci test it done()",
+        "scope": ""
+    }
+
+    , "ci test it fakeAsync": {
+        "prefix": "as-test.it-fakeAsync",
+        "body": "it('${1:should be working}', fakeAsync(() => {\n  $0\n}));",
+        "description": "ci test it fakeAsync()",
+        "scope": ""
+    }
+
+    , "ci test it": {
+        "prefix": "as-test.it",
+        "body": "it('${1:should be working}', () => {\n  $0\n});",
+        "description": "ci test it()",
+        "scope": ""
+    }
+
     , "ci test new": {
         "prefix": "as-test.new",
-        "body": "import { Component, DebugElement } from '@angular/core';\nimport { ComponentFixture, TestBed } from '@angular/core/testing';\n\ndescribe('${1}', () => {\n  let fixture: ComponentFixture<TestComponent>;\n  let dl: DebugElement;\n  let context: TestComponent;\n\n  beforeEach(() => {\n    TestBed.configureTestingModule({\n      imports: [${2}],\n      declarations: [TestComponent],\n    });\n    fixture = TestBed.createComponent(TestComponent);\n    dl = fixture.debugElement;\n    context = fixture.componentInstance;\n    fixture.detectChanges();\n  });\n\n  $0\n});\n\n@Component({\n  template: `\n  ${3}\n  `,\n})\nclass TestComponent { }\n",
+        "body": "import { Component, DebugElement, ViewChild } from '@angular/core';\nimport { ComponentFixture, TestBed } from '@angular/core/testing';\n\ndescribe('${1}', () => {\n  let fixture: ComponentFixture<TestComponent>;\n  let dl: DebugElement;\n  let context: TestComponent;\n\n  beforeEach(() => {\n    TestBed.configureTestingModule({\n      imports: [${2}],\n      declarations: [TestComponent],\n    });\n    fixture = TestBed.createComponent(TestComponent);\n    dl = fixture.debugElement;\n    context = fixture.componentInstance;\n    fixture.detectChanges();\n  });\n\n  $0\n});\n\n@Component({\n  template: `\n  <${3} #comp>\n  </${3}>\n  `,\n})\nclass TestComponent {\n  @ViewChild('comp') comp: ${4}Component;\n}\n",
         "description": "ci test new()(ci test new())",
         "scope": ""
     }  
