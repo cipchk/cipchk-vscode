@@ -1,1 +1,0 @@
-cipchk-vscode for cipchk only.

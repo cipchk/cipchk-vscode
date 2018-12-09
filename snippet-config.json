@@ -1,0 +1,7 @@
+{
+  "$schema": "./node_modules/vscode-snippet-generator/schema.json",
+  "sourceRoot": "src",
+  "outFile": "snippets.json",
+  "prefix": "as",
+  "separator": "-"
+}

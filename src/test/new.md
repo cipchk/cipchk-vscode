@@ -1,3 +1,6 @@
+新测试用例
+
+```ts
 import { Component, DebugElement, ViewChild } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
@@ -27,5 +30,6 @@ describe('${1}', () => {
   `,
 })
 class TestComponent {
-  @ViewChild('comp') comp: ${4}Component;
+  @ViewChild('comp') comp: ${4};
 }
+```
