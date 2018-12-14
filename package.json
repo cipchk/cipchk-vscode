@@ -3,6 +3,10 @@
   "displayName": "cipchk-vscode",
   "description": "The snippets for cipchk only.",
   "version": "666.0.0",
+  "scripts": {
+    "build": "vscode-snippet-generator",
+    "release": "npm run build && vsce package"
+  },
   "icon": "icon.png",
   "publisher": "cipchk",
   "private": true,
@@ -22,10 +26,6 @@
       "language": "typescript",
       "path": "./snippets.json"
     }]
-  },
-  "scripts": {
-    "build": "vscode-snippet-generator",
-    "release": "npm run build && vsce package"
   },
   "devDependencies": {
     "vscode-snippet-generator": "^1.0.2"

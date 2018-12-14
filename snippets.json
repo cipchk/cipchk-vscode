@@ -4,6 +4,10 @@
     "body": "<ng-container *stringTemplateOutlet=\"${1:title}\">{{$1}}</ng-container>",
     "description": "字符串模式占位符"
   },
+  "as_lint_disabled": {
+    "prefix": "as-lint-disabled",
+    "body": "// tslint:disable:${1|no-any,no-string-literal,no-invalid-this,no-shadowed-variable|}"
+  },
   "as_test_describe": {
     "prefix": "as-test-describe",
     "body": "describe('${1:#properies}', () => {\n  $0\n});"
