@@ -31,15 +31,19 @@
   },
   "as_ts_@input-@output": {
     "prefix": "as-ts-@input-@output",
-    "body": "@Input() ${1|type,collapsed|} = ${2|true,false,0,''|};\n@Output() ${1}Change = new EventEmitter<${3|boolean,number,string,void,any|}>();\n$0"
+    "body": "@Input() ${1|type,collapsed|} = ${2|true,false,0,''|};\n@Output() readonly ${1}Change = new EventEmitter<${3|boolean,number,string,void,any|}>();\n$0"
   },
   "as_ts_@input-boolean": {
     "prefix": "as-ts-@input-boolean",
-    "body": "@Input() @InputBoolean() ${1|disabled,enabled,loading,collapsed|} = $2;\n$0"
+    "body": "@Input() @InputBoolean() ${1|close,open,disabled,enabled,loading,collapsed|} = $2;\n$0"
   },
   "as_ts_@input-number": {
     "prefix": "as-ts-@input-number",
     "body": "@Input() @InputNumber() ${1|height,width,size|} = $2;\n$0"
+  },
+  "as_ts_@input-string-template": {
+    "prefix": "as-ts-@input-string-template",
+    "body": "@Input() ${1|title,subTitle,action,extra|}: string | TemplateRef<void>;\n$0"
   },
   "as_ts_@input": {
     "prefix": "as-ts-@input",
@@ -47,7 +51,7 @@
   },
   "as_ts_@output": {
     "prefix": "as-ts-@output",
-    "body": "@Output() ${1|typeChange,collapsedChange|} = new EventEmitter<$2>();\n$0"
+    "body": "@Output() readonly ${1|close,open,typeChange,collapsedChange|} = new EventEmitter<$2>();\n$0"
   },
   "as_ts_region": {
     "prefix": "as-ts-region",
