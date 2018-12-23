@@ -2,6 +2,7 @@
   "as_stringTemplateOutlet": {
     "prefix": "as-stringTemplateOutlet",
     "body": "<ng-container *stringTemplateOutlet=\"${1:title}\">{{$1}}</ng-container>",
-    "description": "字符串模式占位符"
+    "description": "字符串模式占位符",
+    "order": 1000000
   }
 }

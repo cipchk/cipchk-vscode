@@ -20,18 +20,28 @@
   "engines": {
     "vscode": "^1.0.0"
   },
+  "extensionPack": [
+    "cipchk.ng-alain-extension-pack",
+    "cipchk.cssrem",
+    "cipchk.zh-hans-tt-hant-vscode",
+    "ms-vscode.typescript-javascript-grammar",
+    "ms-ceintl.vscode-language-pack-zh-hans"
+  ],
   "categories": ["Snippets"],
   "contributes": {
     "snippets": [{
-      "language": "html",
-      "path": "./snippets-html.json"
-    }, {
-      "language": "typescript",
-      "path": "./snippets-ts.json"
-    }, {
-      "language": "less",
-      "path": "./snippets-less.json"
-    }]
+        "language": "html",
+        "path": "./snippets-html.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets-ts.json"
+      },
+      {
+        "language": "less",
+        "path": "./snippets-less.json"
+      }
+    ]
   },
   "devDependencies": {
     "vscode-snippet-generator": "^1.2.2"

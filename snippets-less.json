@@ -1,52 +1,62 @@
 {
-  "as_media_mobile-lg": {
-    "prefix": "as-media-mobile-lg",
-    "body": "@media (max-width: @screen-lg-max) {\n  $0\n}",
-    "description": "`<992px` 屏幕"
-  },
-  "as_media_mobile-md": {
-    "prefix": "as-media-mobile-md",
-    "body": "@media (max-width: @screen-md-max) {\n  $0\n}",
-    "description": "`<768px` 屏幕"
-  },
-  "as_media_mobile-sm": {
-    "prefix": "as-media-mobile-sm",
-    "body": "@media (max-width: @screen-md-max) {\n  $0\n}",
-    "description": "`<576px` 屏幕"
-  },
-  "as_media_mobile-xs": {
-    "prefix": "as-media-mobile-xs",
-    "body": "@media (max-width: @screen-xs-max) {\n  $0\n}",
-    "description": "`<480px` 屏幕"
-  },
   "as_media_mobile": {
     "prefix": "as-media-mobile",
     "body": "@media (max-width: @mobile-max) {\n  $0\n}",
-    "description": "`@mobile-max` 大小"
-  },
-  "as_media_pc-lg": {
-    "prefix": "as-media-pc-lg",
-    "body": "@media (min-width: @screen-lg-min) {\n  $0\n}",
-    "description": "`>992px` 屏幕"
-  },
-  "as_media_pc-md": {
-    "prefix": "as-media-pc-md",
-    "body": "@media (min-width: @screen-md-min) {\n  $0\n}",
-    "description": "`>768px` 屏幕"
-  },
-  "as_media_pc-sm": {
-    "prefix": "as-media-pc-sm",
-    "body": "@media (min-width: @screen-md-min) {\n  $0\n}",
-    "description": "`>576px` 屏幕"
-  },
-  "as_media_pc-xs": {
-    "prefix": "as-media-pc-xs",
-    "body": "@media (min-width: @screen-xs-min) {\n  $0\n}",
-    "description": "`>480px` 屏幕"
+    "description": "`@mobile-max` 大小",
+    "order": 1
   },
   "as_media_pc": {
     "prefix": "as-media-pc",
     "body": "@media (min-width: @mobile-min) {\n  $0\n}",
-    "description": "`@mobile-min` 大小"
+    "description": "`@mobile-min` 大小",
+    "order": 2
+  },
+  "as_media_mobile-lg": {
+    "prefix": "as-media-mobile-lg",
+    "body": "@media (max-width: @screen-lg-max) {\n  $0\n}",
+    "description": "`<992px` 屏幕",
+    "order": 1000000
+  },
+  "as_media_mobile-md": {
+    "prefix": "as-media-mobile-md",
+    "body": "@media (max-width: @screen-md-max) {\n  $0\n}",
+    "description": "`<768px` 屏幕",
+    "order": 1000001
+  },
+  "as_media_mobile-sm": {
+    "prefix": "as-media-mobile-sm",
+    "body": "@media (max-width: @screen-md-max) {\n  $0\n}",
+    "description": "`<576px` 屏幕",
+    "order": 1000002
+  },
+  "as_media_mobile-xs": {
+    "prefix": "as-media-mobile-xs",
+    "body": "@media (max-width: @screen-xs-max) {\n  $0\n}",
+    "description": "`<480px` 屏幕",
+    "order": 1000003
+  },
+  "as_media_pc-lg": {
+    "prefix": "as-media-pc-lg",
+    "body": "@media (min-width: @screen-lg-min) {\n  $0\n}",
+    "description": "`>992px` 屏幕",
+    "order": 1000004
+  },
+  "as_media_pc-md": {
+    "prefix": "as-media-pc-md",
+    "body": "@media (min-width: @screen-md-min) {\n  $0\n}",
+    "description": "`>768px` 屏幕",
+    "order": 1000005
+  },
+  "as_media_pc-sm": {
+    "prefix": "as-media-pc-sm",
+    "body": "@media (min-width: @screen-md-min) {\n  $0\n}",
+    "description": "`>576px` 屏幕",
+    "order": 1000006
+  },
+  "as_media_pc-xs": {
+    "prefix": "as-media-pc-xs",
+    "body": "@media (min-width: @screen-xs-min) {\n  $0\n}",
+    "description": "`>480px` 屏幕",
+    "order": 1000007
   }
 }
