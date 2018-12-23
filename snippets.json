@@ -4,6 +4,56 @@
     "body": "<ng-container *stringTemplateOutlet=\"${1:title}\">{{$1}}</ng-container>",
     "description": "字符串模式占位符"
   },
+  "as_less_media-mobile-lg": {
+    "prefix": "as-less-media-mobile-lg",
+    "body": "@media (max-width: @screen-lg-max) {\n  $0\n}",
+    "description": "`<992px` 屏幕"
+  },
+  "as_less_media-mobile-md": {
+    "prefix": "as-less-media-mobile-md",
+    "body": "@media (max-width: @screen-md-max) {\n  $0\n}",
+    "description": "`<768px` 屏幕"
+  },
+  "as_less_media-mobile-sm": {
+    "prefix": "as-less-media-mobile-sm",
+    "body": "@media (max-width: @screen-md-max) {\n  $0\n}",
+    "description": "`<576px` 屏幕"
+  },
+  "as_less_media-mobile-xs": {
+    "prefix": "as-less-media-mobile-xs",
+    "body": "@media (max-width: @screen-xs-max) {\n  $0\n}",
+    "description": "`<480px` 屏幕"
+  },
+  "as_less_media-mobile": {
+    "prefix": "as-less-media-mobile",
+    "body": "@media (max-width: @mobile-max) {\n  $0\n}",
+    "description": "`@mobile-max` 大小"
+  },
+  "as_less_media-pc-lg": {
+    "prefix": "as-less-media-pc-lg",
+    "body": "@media (min-width: @screen-lg-min) {\n  $0\n}",
+    "description": "`>992px` 屏幕"
+  },
+  "as_less_media-pc-md": {
+    "prefix": "as-less-media-pc-md",
+    "body": "@media (min-width: @screen-md-min) {\n  $0\n}",
+    "description": "`>768px` 屏幕"
+  },
+  "as_less_media-pc-sm": {
+    "prefix": "as-less-media-pc-sm",
+    "body": "@media (min-width: @screen-md-min) {\n  $0\n}",
+    "description": "`>576px` 屏幕"
+  },
+  "as_less_media-pc-xs": {
+    "prefix": "as-less-media-pc-xs",
+    "body": "@media (min-width: @screen-xs-min) {\n  $0\n}",
+    "description": "`>480px` 屏幕"
+  },
+  "as_less_media-pc": {
+    "prefix": "as-less-media-pc",
+    "body": "@media (min-width: @mobile-min) {\n  $0\n}",
+    "description": "`@mobile-min` 大小"
+  },
   "as_lint_disabled": {
     "prefix": "as-lint-disabled",
     "body": "// tslint:disable:${1|no-any,no-string-literal,no-invalid-this,no-shadowed-variable|}"
