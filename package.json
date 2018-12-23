@@ -25,7 +25,8 @@
     "cipchk.cssrem",
     "cipchk.zh-hans-tt-hant-vscode",
     "ms-vscode.typescript-javascript-grammar",
-    "ms-ceintl.vscode-language-pack-zh-hans"
+    "ms-ceintl.vscode-language-pack-zh-hans",
+    "shan.code-settings-sync"
   ],
   "categories": ["Snippets"],
   "contributes": {
