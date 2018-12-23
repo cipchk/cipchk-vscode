@@ -4,7 +4,10 @@
   "description": "The snippets for cipchk only.",
   "version": "666.0.0",
   "scripts": {
-    "build": "vscode-snippet-generator",
+    "build": "npm run build:ts && npm run build:html && npm run build:less",
+    "build:ts": "vscode-snippet-generator --sourceRoot=./src/ts --outFile=./snippets-ts.json",
+    "build:html": "vscode-snippet-generator --sourceRoot=./src/html --outFile=./snippets-html.json",
+    "build:less": "vscode-snippet-generator --sourceRoot=./src/less --outFile=./snippets-less.json",
     "release": "npm run build && vsce package"
   },
   "icon": "icon.png",
@@ -21,13 +24,16 @@
   "contributes": {
     "snippets": [{
       "language": "html",
-      "path": "./snippets.json"
+      "path": "./snippets-html.json"
     }, {
       "language": "typescript",
-      "path": "./snippets.json"
+      "path": "./snippets-ts.json"
+    }, {
+      "language": "less",
+      "path": "./snippets-less.json"
     }]
   },
   "devDependencies": {
-    "vscode-snippet-generator": "^1.0.2"
+    "vscode-snippet-generator": "^1.2.2"
   }
 }

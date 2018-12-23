@@ -1,0 +1,67 @@
+{
+  "as_lint_disabled": {
+    "prefix": "as-lint-disabled",
+    "body": "// tslint:disable:${1|no-any,no-string-literal,no-invalid-this,no-shadowed-variable|}",
+    "description": ""
+  },
+  "as_prop_@input-@output": {
+    "prefix": "as-prop-@input-@output",
+    "body": "@Input() ${1|type,collapsed|} = ${2|true,false,0,''|};\n@Output() readonly ${1}Change = new EventEmitter<${3|boolean,number,string,void,any|}>();\n$0",
+    "description": ""
+  },
+  "as_prop_@input-boolean": {
+    "prefix": "as-prop-@input-boolean",
+    "body": "@Input() @InputBoolean() ${1|close,open,disabled,enabled,loading,collapsed|} = $2;\n$0",
+    "description": ""
+  },
+  "as_prop_@input-number": {
+    "prefix": "as-prop-@input-number",
+    "body": "@Input() @InputNumber() ${1|height,width,size|} = $2;\n$0",
+    "description": ""
+  },
+  "as_prop_@input-string-template": {
+    "prefix": "as-prop-@input-string-template",
+    "body": "@Input() ${1|title,subTitle,action,extra|}: string | TemplateRef<void>;\n$0",
+    "description": ""
+  },
+  "as_prop_@input": {
+    "prefix": "as-prop-@input",
+    "body": "@Input() $1 = $2;\n$0",
+    "description": ""
+  },
+  "as_prop_@output": {
+    "prefix": "as-prop-@output",
+    "body": "@Output() readonly ${1|close,open,typeChange,collapsedChange|} = new EventEmitter<$2>();\n$0",
+    "description": ""
+  },
+  "as_region": {
+    "prefix": "as-region",
+    "body": "// #region ${1|fileds,privates,angular|}\n\n$0\n\n// #endregion",
+    "description": ""
+  },
+  "as_test_describe": {
+    "prefix": "as-test-describe",
+    "body": "describe('${1|default,#properies|}', () => {\n  $0\n});",
+    "description": ""
+  },
+  "as_test_it-done": {
+    "prefix": "as-test-it-done",
+    "body": "it('${1:should be working}', (done: () => void) => {\n  $0\n});",
+    "description": ""
+  },
+  "as_test_it-fakeAsync": {
+    "prefix": "as-test-it-fakeAsync",
+    "body": "it('${1:should be working}', fakeAsync(() => {\n  $0\n}));",
+    "description": ""
+  },
+  "as_test_it": {
+    "prefix": "as-test-it",
+    "body": "it('${1:should be working}', () => {\n  $0\n});",
+    "description": ""
+  },
+  "as_test_new": {
+    "prefix": "as-test-new",
+    "body": "import { Component, DebugElement, ViewChild } from '@angular/core';\nimport { ComponentFixture, TestBed } from '@angular/core/testing';\n\ndescribe('${1}', () => {\n  let fixture: ComponentFixture<TestComponent>;\n  let dl: DebugElement;\n  let context: TestComponent;\n\n  beforeEach(() => {\n    TestBed.configureTestingModule({\n      imports: [${2}],\n      declarations: [TestComponent],\n    });\n    fixture = TestBed.createComponent(TestComponent);\n    dl = fixture.debugElement;\n    context = fixture.componentInstance;\n    fixture.detectChanges();\n  });\n\n  $0\n});\n\n@Component({\n  template: `\n  <${3} #comp>\n  </${3}>\n  `,\n})\nclass TestComponent {\n  @ViewChild('comp') comp: ${4};\n}",
+    "description": "新测试用例"
+  }
+}
