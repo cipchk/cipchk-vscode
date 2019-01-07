@@ -1,0 +1,56 @@
+// 将设置放入此文件中以覆盖默认设置
+{
+	// 控制字体大小。
+	// "editor.fontFamily": "'Source Code Pro', 'Source Han Sans ', Consolas, 'Courier New', 微软雅黑",
+	// https://www.google.com/get/noto/#sans-hans
+	// https://github.com/tonsky/FiraCode
+	"editor.fontFamily": "Fira Code, 'Noto Sans CJK SC Medium', Consolas, 'Courier New', monospace",
+	"editor.lineHeight": 26,
+	"editor.roundedSelection": false,
+	"editor.fontSize": 16,
+	// "editor.tabCompletion": "onlySnippets",
+	"editor.formatOnSave": false,
+	"workbench.colorTheme": "Default Light+",
+	"workbench.editor.highlightModifiedTabs": true,
+	"sync.gist": "e104233ebd3eb275e6468ae36b6b62f1",
+	"sync.autoDownload": false,
+	"sync.autoUpload": false,
+	"sync.forceDownload": false,
+	"sync.quietSync": true,
+	"sync.askGistName": false,
+	"sync.removeExtensions": true,
+	"sync.syncExtensions": true,
+	"git.enableSmartCommit": true,
+	"files.eol": "\n",
+	"[markdown]": {
+		"editor.quickSuggestions": true
+	},
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"tslint.autoFixOnSave": false,
+	"extensions.autoUpdate": false,
+	"editor.snippetSuggestions": "bottom",
+	"editor.quickSuggestionsDelay": 25,
+	"editor.suggestSelection": "recentlyUsedByPrefix",
+	"editor.wordWrapColumn": 140,
+	"editor.minimap.renderCharacters": false,
+	"emmet.showSuggestionsAsSnippets": true,
+	"html.format.wrapLineLength": 0,
+	"beautify.language": {
+		"js": {},
+		"css": [],
+		"html": [
+			"htm",
+			"html"
+		]
+	},
+	"files.associations": {
+		"*.cjson": "jsonc",
+		"*.wxss": "css",
+		"*.wxs": "javascript"
+	},
+	"emmet.includeLanguages": {
+		"wxml": "html"
+	},
+	// "ng-zorro-vscode.language": "zh-CN",
+	"workbench.startupEditor": "newUntitledFile"
+}
