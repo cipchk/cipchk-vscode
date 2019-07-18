@@ -1,8 +1,8 @@
 {
-  "as_lint_disabled": {
-    "prefix": "as-lint-disabled",
-    "body": "// tslint:disable:${1|no-any,no-string-literal,no-invalid-this,no-shadowed-variable|}",
-    "description": ""
+  "as_build_modal": {
+    "prefix": "as-build-modal",
+    "body": "import { Component, OnInit, ChangeDetectorRef, ChangeDetectionStrategy } from '@angular/core';\nimport { _HttpClient } from '@delon/theme';\nimport { NzModalRef } from 'ng-zorro-antd';\nimport { MessageService } from '@core';\n\nconst URI = `$1`;\n\n@Component({\n  selector: '$2',\n  templateUrl: './$3.component.html',\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class $4Component implements OnInit {\n  i: { [key: string]: any };\n  loading = false;\n\n  constructor(\n    private http: _HttpClient,\n    private msg: MessageService,\n    private modal: NzModalRef,\n    private cdr: ChangeDetectorRef\n  ) {}\n\n  private setLoading(status = true): this {\n    this.loading = status;\n    this.cdr.detectChanges();\n    return this;\n  }\n\n  ngOnInit(): void {\n    this.setLoading()\n      .http\n      .get(URI + this.i.id)\n      .subscribe(res => {\n        this.i = res;\n        this.setLoading(false);\n      });\n  }\n\n  save() {\n    this.setLoading()\n        .http\n        .post(``, this.i)\n        .subscribe(() => {\n          this.msg.suc();\n          this.modal.close(true);\n        }, () => this.setLoading(false));\n  }\n\n  close() {\n    this.modal.destroy();\n  }\n}",
+    "description": "构建一个 `Modal` 组件"
   },
   "as_prop_@input-@output": {
     "prefix": "as-prop-@input-@output",

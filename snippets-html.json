@@ -1,4 +1,14 @@
 {
+  "as_modal-edit": {
+    "prefix": "as-modal-edit",
+    "body": "<modal tit=\"{{ i.id > 0 ? '编辑 【' + i.name + '】 ' : '创建新' }}$1\">\n  <form nz-form #f=\"ngForm\" (ngSubmit)=\"save()\">\n    <div se-container col=\"1\">\n      $0\n    </div>\n    <ng-template #footer>\n      <button nz-button type=\"button\" (click)=\"close()\">关闭</button>\n      <button nz-button nzType=\"primary\" [disabled]=\"f.invalid\" [nzLoading]=\"http.loading\">\n        保存\n      </button>\n    </ng-template>\n  </form>\n</modal>",
+    "description": "编辑模态HTML代码"
+  },
+  "as_modal": {
+    "prefix": "as-modal",
+    "body": "<modal tit=\"${1:title}\">\n  $0\n  <ng-template #footer>\n    $2\n  </ng-template>\n</modal>",
+    "description": "模态HTML代码"
+  },
   "as_stringTemplateOutlet": {
     "prefix": "as-stringTemplateOutlet",
     "body": "<ng-container *stringTemplateOutlet=\"${1:title}\">{{$1}}</ng-container>",
