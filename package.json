@@ -21,11 +21,12 @@
     "vscode": "^1.0.0"
   },
   "extensionPack": [
+    "ms-ceintl.vscode-language-pack-zh-hans",
     "cipchk.ng-alain-extension-pack",
     "cipchk.cssrem",
     "cipchk.zh-hans-tt-hant-vscode",
     "ms-vscode.typescript-javascript-grammar",
-    "ms-ceintl.vscode-language-pack-zh-hans",
+    "cipchk.vscode-markdown-compact-table-formatter",
     "shan.code-settings-sync"
   ],
   "categories": ["Snippets"],
